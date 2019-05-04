@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/darker_gray"
+    android:clickable="true">
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:gravity="fill"
+        android:horizontalSpacing="1dp"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"></GridView>
+
+    <Button
+        android:id="@+id/btnNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnNew"
+        android:layout_marginRight="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_above="@+id/nextColour"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/nextColour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nextColor"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/txtTimer"
+        android:layout_alignRight="@+id/txtTimer"
+        android:layout_alignEnd="@+id/txtTimer" />
+
+    <ImageView
+        android:id="@+id/colorPreview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/blue"
+        android:layout_below="@+id/txtTimer"
+        android:layout_toRightOf="@+id/nextColour"
+        android:layout_toEndOf="@+id/nextColour"
+        android:layout_marginTop="36dp" />
+
+    <TextView
+        android:id="@+id/txtTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="70dp"
+        android:text="@string/lblTimer"
+        android:textSize="34sp" />
+
+</RelativeLayout>

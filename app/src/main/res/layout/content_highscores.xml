@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/highscoresLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dave.assignmentv4.Highscores"
+    tools:showIn="@layout/activity_highscores">
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:stretchColumns="0,1"
+        android:id="@+id/maintable"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/lblGridsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/lblGridSize" />
+
+    <TextView
+        android:id="@+id/lblDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblGridsize"
+        android:layout_alignStart="@+id/lblGridsize"
+        android:layout_below="@+id/lblGridsize"
+        android:layout_marginTop="19dp"
+        android:text="@string/lblDifficulty" />
+
+    <Spinner
+        android:id="@+id/spnGridsize"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/lblGridsize"
+        android:layout_toRightOf="@+id/lblGridsize"
+        android:layout_toEndOf="@+id/lblGridsize"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp" />
+
+    <Spinner
+        android:id="@+id/spnDifficulty"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/lblDifficulty"
+        android:layout_alignLeft="@+id/spnGridsize"
+        android:layout_alignStart="@+id/spnGridsize" />
+</RelativeLayout>

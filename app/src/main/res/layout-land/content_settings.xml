@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dave.assignmentv4.Settings"
+    tools:showIn="@layout/activity_settings">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblColor1"
+
+        android:layout_alignBottom="@+id/spinner"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/spinner2"
+        android:layout_alignLeft="@+id/spinner2"
+        android:layout_alignStart="@+id/spinner2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblColor2"
+        android:layout_alignBottom="@+id/spinner2"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/spinner3"
+        android:layout_alignLeft="@+id/spinner4"
+        android:layout_alignStart="@+id/spinner4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblGridSize"
+        android:layout_alignBottom="@+id/spinner3"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/spinner2"
+        android:layout_alignStart="@+id/spinner2" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblDifficulty"
+        android:layout_alignTop="@+id/spinner4"
+        android:layout_toLeftOf="@+id/btnSaveSettings"
+        android:layout_toStartOf="@+id/btnSaveSettings" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="188dp"
+        android:layout_marginEnd="188dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:id="@+id/btnSaveSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblSettingsButton"
+        android:layout_marginBottom="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
